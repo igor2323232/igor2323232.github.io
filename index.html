@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Player Tracker</h1>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Player Stats Overview</h2>
+            <div class="stat">
+                <img src="images/image2.png" alt="Speed Icon">
+                <div>
+                    <h3>Maximum Speed</h3>
+                    <p id="max-speed">-- km/h</p>
+                </div>
+            </div>
+            <div class="stat">
+                <img src="images/image2.png" alt="Speed Icon">
+                <div>
+                    <h3>Medium Speed</h3>
+                    <p id="medium-speed">-- km/h</p>
+                </div>
+            </div>
+            <div class="stat">
+                <img src="images/image3.png" alt="Heat Map Icon">
+                <div>
+                    <h3>Distance Covered</h3>
+                    <p id="distance-covered">-- km</p>
+                </div>
+            </div>
+            <div class="stat">
+                <img src="images/oxygen-icon.png" alt="Oxygen Icon">
+                <div>
+                    <h3>Oxygen Level</h3>
+                    <p id="oxygen-level">--%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="performance">
+            <h2>Performance Charts</h2>
+            <canvas id="performance-radar-chart"></canvas>
+        </section>
+
+        <section id="heatmap">
+            <h2>Heat Map</h2>
+            <div class="heatmap-container">
+                <img src="images/heatmap-template.png" alt="Heat Map" id="heatmap-img">
+                <div class="legend">
+                    <p>High</p>
+                    <div class="color-scale">
+                        <div style="background-color: #ff0000;"></div>
+                        <div style="background-color: #ff8000;"></div>
+                        <div style="background-color: #ffff00;"></div>
+                        <div style="background-color: #00ff00;"></div>
+                        <div style="background-color: #0000ff;"></div>
+                    </div>
+                    <p>Low</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Player Tracker</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
